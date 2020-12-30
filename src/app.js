@@ -20,11 +20,11 @@ store.subscribe(() => {
   const state = store.getState();
   console.log(getVisibleExpenses(state.expenses, state.filters));
 });
-store.dispatch(addExpenses({ description: "Water bill", amount: 4500 }));
+/* store.dispatch(addExpenses({ description: "Water bill", amount: 4500 }));
 store.dispatch(
   addExpenses({ description: "rent", amount: 13500, createdAt: 1000 })
 );
-store.dispatch(addExpenses({ description: "Gas bill" }));
+store.dispatch(addExpenses({ description: "Gas bill" })); */
 
 const jsx = (
   <Provider store={store}>
