@@ -1,6 +1,6 @@
 import { v4 as uuidv4 } from "uuid";
 //Add expense action generator
-export const addExpenses = ({
+export const addExpense = ({
   description = "",
   note = "",
   amount = 0,

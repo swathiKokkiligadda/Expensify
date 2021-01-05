@@ -2,7 +2,6 @@ import React from "react";
 import moment from "moment";
 import { SingleDatePicker } from "react-dates";
 
-import { removeExpense } from "../actions/expenses";
 //setup note change
 //setup onChange and value from text area
 
