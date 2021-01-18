@@ -9,6 +9,7 @@ import { Provider } from "react-redux";
 import "normalize.css/normalize.css";
 import "./styles/styles.scss";
 import "react-dates/lib/css/_datepicker.css";
+import './firebase/firebase';
 
 const store = configureStore();
 const state = store.getState();
@@ -18,7 +19,7 @@ const state = store.getState();
 // getvisibleexpenses -print visible ones to screen
 store.subscribe(() => {
   const state = store.getState();
-  console.log(getVisibleExpenses(state.expenses, state.filters));
+  getVisibleExpenses(state.expenses, state.filters);
 });
 /* store.dispatch(addExpenses({ description: "Water bill", amount: 4500 }));
 store.dispatch(
