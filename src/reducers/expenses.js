@@ -7,7 +7,7 @@ export default (state = expensesReducerDefault, action) => {
       return [...state, action.expense];
     case "REMOVE_EXPENSE":
       return state.filter((item) => {
-        return item.id !== action.payload;
+        return item.id !== action.id;
       });
     case "EDIT_EXPENSE":
       return state.map((expense) => {
