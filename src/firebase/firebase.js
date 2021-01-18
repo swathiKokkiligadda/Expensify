@@ -1,4 +1,6 @@
-import * as firebase from 'firebase';
+import firebase from 'firebase';
+import "firebase/database";
+
 
 const config = {
   apiKey: process.env.FIREBASE_API_KEY,
@@ -10,8 +12,8 @@ const config = {
   
 };
 
-firebase.default.initializeApp(config);
-const database = firebase.default.database();
+firebase.initializeApp(config);
+const database = firebase.database();
 export {firebase, database as default };
 
 /* const createdAt = moment();
